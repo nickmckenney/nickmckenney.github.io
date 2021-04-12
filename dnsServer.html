@@ -71,16 +71,20 @@
 							<section id="two" class="spotlights">
 								<section>
 									<a href="generic.html" class="image">
-										<img src="progress.jpg" alt="" data-position="center center" />
+										<img src="openvpnserver.PNG" alt="" data-position="center center" />
 									</a>
 									<div class="content">
 										<div class="inner">
 											<header class="major">
 												<h3>Custom VPN open Server</h3>
 											</header>
-											<p>In Progress</p>
+											<p>I initially had to first allow my OpenVPN to use protocol UDP over TCP since it has significantly greater speeds since it doesn't do any checks. 
+                                                Though UDP won't do any checks for lost packets. After picking my protocol I needed to listen to an open port. The DNS server I choose was Google since I use it every day. 
+                                                I could have used my PiHole DNS server too! After creating the private keys I had the OpenVPN server working. 
+                                                I needed to install Samba to copy my current VPN onto windows. 
+												After that, I only needed to change a small part of the config for samba. The rest was adding a rule for my router to accept a port redirection for my NAT.</p>
 
-											<p>I plan to create a VPN open server instead of using 3rd party VPN providers</p>
+										
 											
 										</div>
 									</div>
